@@ -9,9 +9,13 @@
     padding-top: 30vh;
 }
 #submit-btn{
-    display: grid;
+    display:grid;
+    margin-block: 5%;
 }
 #form-style{
     width: 60vw;
     max-width: 60vh;
+}
+#success-account-created{
+    color: limegreen;
 }
