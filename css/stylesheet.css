@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
 }
+.form-label{
+    text-align: center !important;
+}
 #login-box{
-    padding-top: 20vh;
+    padding-top: 30vh;
+}
+#submit-btn{
+    display: grid;
+}
+#form-style{
+    width: 60vw;
+    max-width: 60vh;
 }

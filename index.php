@@ -1,7 +1,6 @@
 <?php
+include_once("./php/session.php");
 include_once("./php/check_login.php");
-
-// echo $_SESSION['username'];
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -14,12 +13,15 @@ include_once("./php/check_login.php");
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
 	<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
 
 </head>
 <body>
-
+<a href="./php/logout.php" class="btn btn-outline-primary btn-block">logout</a>
 <div id="doc2" class="yui-t7">
 	<div id="inner">
 	

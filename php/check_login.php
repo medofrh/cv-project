@@ -1,11 +1,8 @@
 <?php
-session_start();
 
-if(isset($_SESSION['username']) && !empty($_SESSION['username'])) {
-   echo 'Set and not empty, and no undefined index error!';
-}
-if(!isset($_SESSION['username']) && empty($_SESSION['username'])){
-    header("location:./php/login.php");
-}
-
+   if (!isset($_SESSION['userID']) && empty($_SESSION['userID'])) {
+        echo "u musst signin in frist !!";
+        header('Location: ../php/login.php');
+        exit();
+    }
 ?>

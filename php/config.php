@@ -14,10 +14,6 @@ class controller{
 	public function __construct()
 	{
 		return $this->sqli();
-		// $this->con = mysqli_connect($this->host,$this->user,$this->password,$this->db);
-		// if($this->con->connect_error){
-		// 	echo "Fail". $this->con->connect_error;	
-		// }
 	}
 	public function sqli(){
         $this->sqli = new db(
@@ -32,6 +28,11 @@ class controller{
             return $this->sqli;
         }
     }
+
+    public function sIO($ss){ 
+        return addslashes(htmlspecialchars(trim($ss))); 
+    }
+    
 }
 
 ?>
